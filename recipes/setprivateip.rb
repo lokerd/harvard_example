@@ -6,8 +6,8 @@ gem_package "aws-sdk" do
 end
 
 ipconfiguration = {
-    "lb2" => "110.0.1.11",
-    "lb3" => "110.0.1.12"
+    "lb1" => "110.0.1.11",
+    "lb2" => "110.0.1.12"
     }
 
 ec2 = AWS::EC2.new(:region => node[:opsworks][:instance][:region])
